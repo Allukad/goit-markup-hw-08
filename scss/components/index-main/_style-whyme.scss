@@ -1,0 +1,36 @@
+/* Почему мы */
+.whyme {
+    display: flex;
+    justify-content: center;
+  }
+  .whyme__item {
+    width: 270px;
+  &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  .whyme__icon-box {
+    width: 270px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5f4fa;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+  .whyme__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--main-color);
+    margin-bottom: 10px;
+  }
+  .whyme__text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--sec-color);
+  }

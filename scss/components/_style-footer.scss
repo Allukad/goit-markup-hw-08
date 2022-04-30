@@ -1,0 +1,121 @@
+/* Стили Подвала */
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2f303a;
+  }
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+  }
+  /* Подвал адрес и контакты */
+  .footer-contacts {
+    flex-grow: 1;
+  }
+  .adress__box {
+    margin-top: 20px;
+  }
+  .adress__item {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    &:not(:last-child) {
+      margin-bottom: 9px;
+    }
+  }
+ 
+  .adress__map {
+    color: #ffffff;
+  }
+  .adress__cont {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  /* Подвал социалка */
+  .foot-social__box {
+    margin-left: 70px;
+  }
+  .foot-social__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  .foot-social__list {
+    display: flex;
+    align-items: center;
+  }
+  .foot-social__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: #ffffff;
+    transition: color var(--anim-fast), background-color var(--anim-fast);
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: var(--hover-color);
+  }
+  }
+  
+  .foot-social__link .icon {
+    fill: currentColor;
+  }
+  /* Стили "Подписатся на рассылку" */
+  .subscribe {
+    margin-left: 93px;
+  }
+  .subscribe__title {
+    font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+  }
+  .subscribe__form {
+  display: flex;
+  align-items: center;
+  }
+  .subscribe__label {
+    margin-right: 12px;
+  }
+  .subscribe__input {
+    width: 358px;
+    height: 50px;
+    background-color: #2F303A;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding: 15px 16px;
+  outline: none;
+  }
+  .subscribe__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    background-color: var(--hover-color);
+    color: #ffffff;
+    font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  }
+  .subscribe__button .icon { 
+    margin-left: 10px;
+    fill: currentColor;
+    stroke: currentColor;
+  }
