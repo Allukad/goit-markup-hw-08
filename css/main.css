@@ -94,7 +94,6 @@ img {
 }
 
 .social-list {
-  margin-top: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -702,6 +701,10 @@ img {
   }
 }
 
+.team__box p {
+  margin-bottom: 16px;
+}
+
 .team__social-link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -971,9 +974,27 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-left: 76px;
+    padding-right: 89px;
+  }
 }
 
 /* Подвал адрес и контакты */
@@ -983,8 +1004,39 @@ img {
           flex-grow: 1;
 }
 
+@media screen and (max-width: 1199px) {
+  .footer-contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 60px;
+  }
+}
+
 .adress__box {
   margin-top: 20px;
+}
+
+@media screen and (max-width: 1199px) {
+  .adress__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .adress__item {
@@ -995,7 +1047,13 @@ img {
 }
 
 .adress__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+}
+
+@media screen and (min-width: 1200px) {
+  .adress__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 .adress__map {
@@ -1007,8 +1065,38 @@ img {
 }
 
 /* Подвал социалка */
-.foot-social__box {
-  margin-left: 70px;
+@media screen and (max-width: 767px) {
+  .foot-social__box {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .foot-social__box {
+    margin-left: 165px;
+    margin-top: 5px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .foot-social__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .foot-social__box {
+    margin-left: 70px;
+  }
 }
 
 .foot-social__title {
@@ -1059,8 +1147,33 @@ img {
 }
 
 /* Стили "Подписатся на рассылку" */
-.subscribe {
-  margin-left: 93px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .subscribe {
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .subscribe {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    margin-left: 93px;
+  }
 }
 
 .subscribe__title {
@@ -1082,12 +1195,29 @@ img {
           align-items: center;
 }
 
-.subscribe__label {
-  margin-right: 12px;
+@media screen and (max-width: 1199px) {
+  .subscribe__form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe__label {
+    margin-right: 12px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .subscribe__label {
+    margin-bottom: 20px;
+  }
 }
 
 .subscribe__input {
-  width: 358px;
+  width: 450px;
   height: 50px;
   background-color: #2F303A;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1098,6 +1228,12 @@ img {
   border-radius: 4px;
   padding: 15px 16px;
   outline: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe__input {
+    width: 358px;
+  }
 }
 
 .subscribe__button {
