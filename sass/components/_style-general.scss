@@ -7,8 +7,12 @@ body {
   font-family: 'Roboto', sans-serif;
   max-width: 480px;
   margin: 0px;
+  margin-left: auto;
+  margin-right: auto;
+
   @media screen and (min-width:768px) {
     max-width: 768px;
+
   }
   @media screen and (min-width: 1200px) {
     max-width: 1600px;
@@ -35,8 +39,12 @@ p {
   cursor: pointer;
 }
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width:1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .container {
   width: 100%;
@@ -45,7 +53,6 @@ p {
   padding-left: 15px;
   padding-right: 15px;
   @media screen and (min-width: 768px) {
-    width: 768px;
   }
   @media screen and (min-width: 1200px) {
     width: 1200px;
