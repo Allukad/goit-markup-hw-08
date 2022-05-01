@@ -1294,13 +1294,20 @@ img {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 40px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal__wrapper {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal__close-btn {
@@ -1329,11 +1336,17 @@ img {
   width: 100%;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color);
   margin-bottom: 12px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal__title {
+    line-height: 1.15;
+  }
 }
 
 .modal__label {
@@ -1411,13 +1424,20 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal__agreement {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal__agree-text {
@@ -1445,9 +1465,15 @@ img {
           flex-grow: 0;
   border: 2px solid var(--main-color);
   border-radius: 2px;
-  margin-right: 8.38px;
+  margin-right: 8px;
   -webkit-transition: border-color var(--anim-fast), background-color var(--anim-fast), background-image var(--anim-fast);
   transition: border-color var(--anim-fast), background-color var(--anim-fast), background-image var(--anim-fast);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal__custom-checkbox {
+    margin-right: 8.38px;
+  }
 }
 
 .modal__agreement > .checkbox:not(:disabled):not(:checked) + .modal__agree-text:hover > .modal__custom-checkbox {
@@ -1473,6 +1499,7 @@ img {
 }
 
 .modal__agree-link {
+  margin-left: 4px;
   color: var(--hover-color);
   text-decoration: underline;
 }
