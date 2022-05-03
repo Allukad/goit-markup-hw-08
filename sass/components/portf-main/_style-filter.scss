@@ -1,11 +1,14 @@
 /* Портфолио фильтр */
 .filter__list {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     @media screen and (max-width:767px) {
       justify-content: flex-start;
+    }
+    @media screen and (min-width:768px) {
+      margin-bottom: 30px;
     }
     @media screen and (min-width:1200px) {
       margin-bottom: 50px;

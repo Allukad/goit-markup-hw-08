@@ -1,5 +1,8 @@
 .mobile-menu {
     position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     top: 0;
     left: 0;
     width: 100vh;
@@ -17,7 +20,6 @@ transition: transform var(--anim-fast);
   }
 }
 .mobile-nav {
-    margin-bottom: 302px;
     &__list {
         display: block;
     }
@@ -41,7 +43,6 @@ margin-bottom: 32px;
     }
 }
 .mobile-contacts {
-    margin-bottom: 64px;
     &__item:not(:last-child) {
         margin-bottom: 32px;
     }
