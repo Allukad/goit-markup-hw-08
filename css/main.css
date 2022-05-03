@@ -733,6 +733,24 @@ img {
   fill: currentColor;
 }
 
+@media (min-width: 768px) {
+  .team-img-480 {
+    display: none;
+  }
+}
+
+@media (max-width: 767px), (min-width: 1200px) {
+  .team-img-768 {
+    display: none;
+  }
+}
+
+@media (max-width: 1199px) {
+  .team-img-1200 {
+    display: none;
+  }
+}
+
 /* Стили "наши клиенты" */
 .our-clients__title {
   font-weight: 700;
