@@ -415,7 +415,6 @@ img {
 
 @media screen and (min-width: 768px) {
   .hero {
-    width: 768px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/hero-img/heroweb-768.jpg");
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero-img/heroweb-768.jpg");
   }
@@ -430,7 +429,6 @@ img {
 
 @media screen and (min-width: 1200px) {
   .hero {
-    width: 1600px;
     height: 600px;
     padding: 200px 0;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/hero-img/heroweb-1200.jpg");
