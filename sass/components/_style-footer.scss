@@ -1,6 +1,5 @@
 /* Стили Подвала */
 .footer {
-  min-width: 320px;
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: #2f303a;
@@ -156,6 +155,9 @@
     border-radius: 4px;
     padding: 15px 16px;
     outline: none;
+    @media screen and (min-width:768px) {
+      width: 450px;
+    }
     @media screen and (min-width:1200px) {
       width: 358px;
     }
