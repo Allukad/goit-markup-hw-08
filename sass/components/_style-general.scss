@@ -8,10 +8,10 @@ body {
   max-width: 480px;
   margin: 0px;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     max-width: 768px;
-margin-left: auto;
-margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
   @media screen and (min-width: 1200px) {
     max-width: 1600px;
@@ -25,7 +25,6 @@ ul {
   padding: 0;
   list-style: none;
   list-style-type: none;
-
 }
 h1,
 h2,
@@ -41,20 +40,24 @@ p {
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
   }
 }
 .container {
-  width: 100%;
+  min-width: 480px;
+  width: 480px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
   @media screen and (min-width: 768px) {
+    min-width: 768px;
+    width: 768px;
   }
   @media screen and (min-width: 1200px) {
+    min-width: 1200px;
     width: 1200px;
   }
 }
