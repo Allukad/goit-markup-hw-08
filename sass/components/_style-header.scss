@@ -137,6 +137,11 @@
      transition: opacity var(--anim-fast);
     }
 }
+  &.is-active {
+    position: fixed;
+    top: 10px;
+    right: 15px;
+  }
   &.is-active .menu-btn__icon-open {
     opacity: 0;
   }
