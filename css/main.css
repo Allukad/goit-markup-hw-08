@@ -70,15 +70,24 @@ p {
 }
 
 .container {
-  width: 100%;
+  min-width: 480px;
+  width: 480px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 
+@media screen and (min-width: 768px) {
+  .container {
+    min-width: 768px;
+    width: 768px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .container {
+    min-width: 1200px;
     width: 1200px;
   }
 }
@@ -113,6 +122,24 @@ img {
   position: absolute;
   z-index: -1;
   opacity: 0;
+}
+
+@media (min-width: 768px) {
+  .img-480 {
+    display: none;
+  }
+}
+
+@media (max-width: 767px), (min-width: 1200px) {
+  .img-768 {
+    display: none;
+  }
+}
+
+@media (max-width: 1199px) {
+  .img-1200 {
+    display: none;
+  }
 }
 
 .logo {
@@ -402,6 +429,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .hero {
+    min-width: 1200px;
     width: 1600px;
     height: 600px;
     padding: 200px 0;
@@ -731,24 +759,6 @@ img {
 
 .team__social-link .icon {
   fill: currentColor;
-}
-
-@media (min-width: 768px) {
-  .team-img-480 {
-    display: none;
-  }
-}
-
-@media (max-width: 767px), (min-width: 1200px) {
-  .team-img-768 {
-    display: none;
-  }
-}
-
-@media (max-width: 1199px) {
-  .team-img-1200 {
-    display: none;
-  }
 }
 
 /* Стили "наши клиенты" */

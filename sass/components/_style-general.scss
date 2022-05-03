@@ -82,3 +82,22 @@ img {
   z-index: -1;
   opacity: 0;
 }
+
+.img {
+  &-480 {
+    @media (min-width:768px) {
+      display: none;
+    }
+
+  }
+  &-768 {
+    @media (max-width:767px) , (min-width:1200px) {
+      display: none;
+    }
+  }
+  &-1200 {
+    @media (max-width:1199px) {
+      display: none;
+    }
+  }
+}
