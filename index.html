@@ -144,29 +144,26 @@
                 <h2 class="section__wd-title">Чем мы занимаемся</h2>
                 <ul class="whatdo">
                   <li class="whatdo__item">
-                    <img
+                    <img 
+                    srcset="./images/what-are-we-doing/wawd-1.jpg 1x, ./images/what-are-we-doing/wawd-1@x2.jpg 2x"
                       src="./images/what-are-we-doing/wawd-1.jpg"
                       alt="Десктопные приложения"
-                      width="370"
-                      height="294"
                     />
                     <h3 class="whatdo__text">Десктопные приложения</h3>
                   </li>
                   <li class="whatdo__item">
-                    <img
+                    <img 
+                    srcset="./images/what-are-we-doing/wawd-2.jpg 1x, ./images/what-are-we-doing/wawd-2@x2.jpg 2x"
                       src="./images/what-are-we-doing/wawd-2.jpg"
                       alt="Мобильные приложения"
-                      width="370"
-                      height="294"
                     />
                   <h3 class="whatdo__text">Мобильные приложения</h3>
                   </li>
                   <li class="whatdo__item">
-                    <img
+                    <img 
+                    srcset="./images/what-are-we-doing/wawd-3.jpg 1x, ./images/what-are-we-doing/wawd-3@x2.jpg 2x"
                       src="./images/what-are-we-doing/wawd-3.jpg"
                       alt="Дизайнерские решения"
-                      width="370"
-                      height="294"
                     />
                     <h3 class="whatdo__text">Дизайнерские решения</h3>
                   </li>
@@ -174,29 +171,23 @@
               </div>
             </section>
                   <!-- Наша команда -->
-      <section class="section section-t-bg">
+      <section class="section section-team">
         <div class="container">
           <h2 class="section__t-title">Наша команда</h2>
           <ul class="team">
             <li class="team__item">
-              <img class="img-480"
-              srcset="./images/team/t1-480.jpg 1x, ./images/team/t1@x2-480.jpg 2x"
-                src="./images/team/t1-480.jpg"
-                alt="Игорь Демьяненко"
-                
-              />
-              <img class="img-768"
-              srcset="./images/team/t1-768.jpg 1x, ./images/team/t1@x2-768.jpg 2x"
-                src="./images/team/t1-768.jpg"
-                alt="Игорь Демьяненко"
-                
-              />
-              <img class="img-1200"
-              srcset="./images/team/t1-1200.jpg 1x, ./images/team/t1@x2-1200.jpg 2x"
-                src="./images/team/t1-1200.jpg"
-                alt="Игорь Демьяненко"
-                
-              />
+              <picture>
+                <source srcset="./images/team/t1-480.jpg 450w, 
+                ./images/team/t1@x2-480.jpg 900w" 
+                  media="(max-width:767px)" sizes="100vw">
+                <source srcset="./images/team/t1-768.jpg 354w, 
+                ./images/team/t1@x2-768.jpg 708w" 
+                  media="(min-width:768px)" sizes="100vw">
+                <source srcset="./images/team/t1-1200.jpg 270w, 
+                ./images/team/t1@x2-1200.jpg 540w"
+                  media="(min-width:1200px)" sizes="100vw">
+                <img src="./images/team/t1-480.jpg" alt="Игорь Демьяненко">
+              </picture>
               <div class="team__box">
                 <h3 class="team__title">Игорь Демьяненко</h3>
                 <p>Product Designer</p>
@@ -235,24 +226,21 @@
              
             </li>
             <li class="team__item">
-              <img class="img-480"
-              srcset="./images/team/t2-480.jpg 1x, ./images/team/t2@x2-480.jpg 2x"
-                src="./images/team/t2-480.jpg"
-                alt="Ольга Репина"
-                
-              />
-              <img class="img-768"
-              srcset="./images/team/t2-768.jpg 1x, ./images/team/t2@x2-768.jpg 2x"
-                src="./images/team/t2-768.jpg"
-                alt="Ольга Репина"
-                
-              />
-              <img class="img-1200"
-              srcset="./images/team/t2-1200.jpg 1x, ./images/team/t2@x2-1200.jpg 2x"
-                src="./images/team/t2-1200.jpg"
-                alt="Ольга Репина"
-                
-              />
+              <picture>
+                <source srcset="./images/team/t2-480.jpg 450w, 
+                ./images/team/t2@x2-480.jpg 900w" 
+                  media="(max-width:767px)"
+                  sizes="100wv">
+                <source srcset="./images/team/t2-768.jpg 354w, 
+                ./images/team/t2@x2-768.jpg 708w" 
+                  media="(min-width:768px)"
+                  sizes="100wv">
+                <source srcset="./images/team/t2-1200.jpg 270w, 
+                ./images/team/t2@x2-1200.jpg 540w"
+                  media="(min-width:1200px)"
+                  sizes="100wv">
+                <img src="./images/team/t2-480.jpg" alt="Ольга Репина">
+              </picture>
               <div class="team__box">
                 <h3 class="team__title">Ольга Репина</h3>
                 <p>Frontend Developer</p>
@@ -291,24 +279,21 @@
               
             </li>
             <li class="team__item">
-              <img class="img-480"
-              srcset="./images/team/t3-480.jpg 1x, ./images/team/t3@x2-480.jpg 2x"
-                src="./images/team/t3-480.jpg"
-                alt="Николай Тарасов"
-                
-              />
-              <img class="img-768"
-              srcset="./images/team/t3-768.jpg 1x, ./images/team/t3@x2-768.jpg 2x"
-                src="./images/team/t3-768.jpg"
-                alt="Николай Тарасов"
-                
-              />
-              <img class="img-1200"
-              srcset="./images/team/t3-1200.jpg 1x, ./images/team/t3@x2-1200.jpg 2x"
-                src="./images/team/t3-1200.jpg"
-                alt="Николай Тарасов"
-                
-              />
+              <picture>
+                <source srcset="./images/team/t3-480.jpg 450w, 
+                ./images/team/t3@x2-480.jpg 900w" 
+                  media="(max-width:767px)"
+                  sizes="100wv">
+                <source srcset="./images/team/t3-768.jpg 354w, 
+                ./images/team/t3@x2-768.jpg 708w" 
+                  media="(min-width:768px)"
+                  sizes="100wv">
+                <source srcset="./images/team/t3-1200.jpg 270w, 
+                ./images/team/t3@x2-1200.jpg 540w"
+                  media="(min-width:1200px)"
+                  sizes="100wv">
+                <img src="./images/team/t3-480.jpg" alt="Николай Тарасов">
+              </picture>
               <div class="team__box">
                 <h3 class="team__title">Николай Тарасов</h3>
                 <p>Marketing</p>
@@ -347,24 +332,20 @@
               
             </li>
             <li class="team__item">
-              <img class="img-480"
-              srcset="./images/team/t4-480.jpg 1x, ./images/team/t4@x2-480.jpg 2x"
-                src="./images/team/t4-480.jpg"
-                alt="Михаил Ермаков"
-                
-              />
-              <img class="img-768"
-              srcset="./images/team/t4-768.jpg 1x, ./images/team/t4@x2-768.jpg 2x"
-                src="./images/team/t4-768.jpg"
-                alt="Михаил Ермаков"
-                
-              />
-              <img class="img-1200"
-              srcset="./images/team/t4-1200.jpg 1x, ./images/team/t4@x2-1200.jpg 2x"
-                src="./images/team/t4-1200.jpg"
-                alt="Михаил Ермаков"
-                
-              />
+              <source srcset="./images/team/t4-480.jpg 450w, 
+              ./images/team/t4@x2-480.jpg 900w" 
+                media="(max-width:767px)"
+                sizes="100wv">
+              <source srcset="./images/team/t4-768.jpg 354w, 
+              ./images/team/t4@x2-768.jpg 708w" 
+                media="(min-width:768px)"
+                sizes="100wv">
+              <source srcset="./images/team/t4-1200.jpg 270w, 
+              ./images/team/t4@x2-1200.jpg 540w"
+                media="(min-width:1200px)"
+                sizes="100wv">
+              <img src="./images/team/t4-480.jpg" alt="Михаил Ермаков">
+              </picture>
               <div class="team__box">
                 <h3 class="team__title">Михаил Ермаков</h3>
                 <p>UI Designer</p>

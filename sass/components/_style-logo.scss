@@ -1,26 +1,26 @@
 .logo {
-    font-family: Raleway;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
-    color: var(--hover-color);
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: var(--hover-color);
   @media screen and (min-width: 1200px) {
     font-size: 26px;
     line-height: 1.2;
-    }
   }
-  .header__logo {
-    @media screen and (min-width: 768px) {
-      margin-right: 88px;
-    }
-    @media screen and (min-width: 1200px) {
+}
+.header__logo {
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+  }
+  @media screen and (min-width: 1200px) {
     margin-right: 93px;
   }
-  }
-  .header__logo-studio {
-    color: #000000;
-  }
-  .footer__logo-studio {
-    color: #ffffff;
-  }
+}
+.header__logo-studio {
+  color: #000000;
+}
+.footer__logo-studio {
+  color: #ffffff;
+}

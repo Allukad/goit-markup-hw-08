@@ -1,104 +1,102 @@
 /* Портфолио проекты */
 .project__list {
-    display: flex;
-    flex-wrap: wrap;
-    @media screen and (max-width:767px) {
-      flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+}
+.project__item {
+  width: 100%;
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
     }
   }
-  .project__item {
-    width: 100%;
-    @media screen and (max-width:767px) {
-      &:not(:last-child) {
-        margin-bottom: 30px;
-      }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 354px;
+    &:nth-child(odd) {
+      margin-right: 30px;
     }
-  @media screen and (min-width:768px) and (max-width:1199px) { 
-      width: 354px;
-      &:nth-child(odd) {
-        margin-right: 30px;
-      }
-      &:not(:nth-last-child(-n+2)) {
-        margin-bottom: 30px;
-      }
+    &:not(:nth-last-child(-n + 2)) {
+      margin-bottom: 30px;
     }
-  @media screen and (min-width:1200px) {
-      width: 370px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 370px;
     &:not(:nth-last-child(-n + 3)) {
-        margin-bottom: 30px;
-      }
+      margin-bottom: 30px;
+    }
     &:not(:nth-child(3n)) {
-        margin-right: 30px;
-      }
+      margin-right: 30px;
     }
   }
-  
-  
-  .project__thumb {
-    position: relative;
-    overflow: hidden;
+}
+
+.project__thumb {
+  position: relative;
+  overflow: hidden;
+}
+.project__text-box {
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(238, 238, 238, 1);
+  padding: 20px 24px;
+}
+.big-item {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-bottom: 50.77px;
   }
-  .project__text-box {
-    background-color: rgba(255, 255, 255, 1);
-    border: 1px solid rgba(238, 238, 238, 1);
-    padding: 20px 24px;
-  }
-  .big-item {
-    @media screen and (min-width:768px) and (max-width:1199px) {
-      padding-bottom: 50.77px;
-    }
-  }
-  .project__name {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.71;
-    letter-spacing: 0.06em;
-    color: var(--main-color);
-    margin-bottom: 4px;
-  }
-  .project__class {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.03em;
-    color: var(--sec-color);
-  }
-  .project__link {
-    display: block;
-    transition: box-shadow var(--anim-fast);
+}
+.project__name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.71;
+  letter-spacing: 0.06em;
+  color: var(--main-color);
+  margin-bottom: 4px;
+}
+.project__class {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--sec-color);
+}
+.project__link {
+  display: block;
+  transition: box-shadow var(--anim-fast);
   &:focus .project__text-box,
   &:hover .project__text-box {
-      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-        1px 4px 6px rgba(0, 0, 0, 0.16);
-    }
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
   &:hover .project__view-text {
-      transform: translateY(0);
-    }
+    transform: translateY(0);
   }
-  .project__view-text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 77px 24px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.56;
-    letter-spacing: 0.03em;
-    color: #ffffff;
-    background-color: rgba(33, 150, 243, 0.9);
-    transform: translateY(120%);
-    transition: transform var(--anim-fast);
-    @media screen and (min-width:768px) {
-      padding: 49px 24px 77px 24px;
-      transform: translateY(101%);
-    }
-    @media screen and (min-width:1200px) {
-      padding: 63px 24px;
-    }
+}
+.project__view-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 77px 24px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(120%);
+  transition: transform var(--anim-fast);
+  @media screen and (min-width: 768px) {
+    padding: 49px 24px 77px 24px;
+    transform: translateY(101%);
   }
- 
+  @media screen and (min-width: 1200px) {
+    padding: 63px 24px;
+  }
+}

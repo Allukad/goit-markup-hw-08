@@ -35,17 +35,9 @@ p {
   cursor: pointer;
 }
 .section {
-  min-width: 320px;
-  max-width: 480px;
-  margin-left: auto;
-  margin-right: auto;
   padding-top: 60px;
   padding-bottom: 60px;
-  @media screen and (min-width: 768px) {
-    max-width: 768px;
-  }
   @media screen and (min-width: 1200px) {
-    max-width: 1600px;
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -84,23 +76,4 @@ img {
   position: absolute;
   z-index: -1;
   opacity: 0;
-}
-
-.img {
-  &-480 {
-    @media (min-width:768px) {
-      display: none;
-    }
-
-  }
-  &-768 {
-    @media (max-width:767px) , (min-width:1200px) {
-      display: none;
-    }
-  }
-  &-1200 {
-    @media (max-width:1199px) {
-      display: none;
-    }
-  }
 }
