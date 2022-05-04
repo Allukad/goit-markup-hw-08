@@ -1126,8 +1126,6 @@ img {
   .footer-container {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    padding-left: 76px;
-    padding-right: 89px;
   }
 }
 
