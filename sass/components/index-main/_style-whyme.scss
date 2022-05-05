@@ -41,14 +41,16 @@
   margin-bottom: 30px;
 }
 .whyme__title {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--main-color);
   margin-bottom: 10px;
+  @media (min-width:768px) {
+    text-align: left;
+  }
 }
 .whyme__text {
   font-size: 14px;
