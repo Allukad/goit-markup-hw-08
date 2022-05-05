@@ -12,7 +12,7 @@
   pointer-events: auto;
   z-index: 90;
   transition: opacity var(--anim-fast), visibility var(--anim-fast);
-  @media (max-width:767px) {
+  @media (max-width: 767px) {
     padding: 93px 15px 94px 15px;
   }
 }
@@ -33,9 +33,8 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 40px;
-  @media (max-width:767px) {
+  @media (max-width: 767px) {
     position: relative;
-  
   }
   @media screen and (min-width: 1200px) {
     width: 528px;
